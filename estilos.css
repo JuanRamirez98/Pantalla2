@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap");
-.o-container-titulo {
+/*Estilos del titulo de la interfaz*/
+.o-first-column {
   font-family: Roboto;
   margin-top: 0rem;
   margin-right: 1rem;
@@ -10,15 +11,17 @@
   color: #9e9c9c;
   font-weight: bold;
 }
-.o-encabezado {
+/*Estilos del parrafo que se encuentra abajo del titulo*/
+.o-paragraph {
   font-size: 20px;
   color: black;
 }
-.o-contenedor-texto {
+/*Se define el tamaño del contenedor del parrafo*/
+.o-text-container {
   width: 100%;
 }
-
-.o-container-titulo input {
+/*Estilos de los Input Nombre de usuario y Contraseña*/
+.o-first-column input {
   background: transparent;
   border: none;
   border-bottom: 1.5px solid gray;
@@ -26,16 +29,13 @@
   font-size: 20px;
   margin-top: 0rem;
 }
-.o-container-titulo p {
-  font-size: 20px;
-}
-
-.o-boton {
+/*Tamaño del contenedor del boton*/
+.o-button {
   margin-top: 2rem;
-
   width: 200px;
 }
-.o-boton button {
+/*Estilos del boton*/
+.o-button button {
   border-radius: 10px;
   width: 250px;
   height: 50px;
@@ -47,14 +47,16 @@
   border: none;
   color: #ffffff;
 }
-.o-titulo1 {
+/*Estilos de la primera palabra del titulo*/
+.o-tittle1 {
   font-weight: bold;
   font-size: 72px;
   padding: 0;
   margin: 0;
   color: black;
 }
-.o-titulo2 {
+/*Estilos de la segunda palabra del titulo*/
+.o-tittle2 {
   font-weight: bold;
   font-size: 72px;
   padding: 0;
@@ -62,41 +64,45 @@
   color: black;
 }
 
+/*Definición del background del body*/
 body {
   background-image: url(imagenes/burger.gif);
   background-repeat: no-repeat;
   overflow-y: hidden;
 }
+/*Estilos del Link hacia la interfaz de registro*/
 .o-link {
   color: black;
   padding-left: 1rem;
   padding-top: 1.2rem;
 }
-@media screen and (max-width: 767px) and (orientation:portrait) {
-  .o-contenedor-texto {
+/*Media queries*/
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  .o-text-container {
     width: 30%;
   }
-  .o-titulo1 {
+  .o-tittle1 {
     font-size: 38px;
     width: 40%;
   }
-  .o-titulo2 {
+  .o-tittle2 {
     font-size: 38px;
     width: 40%;
   }
 
-  .o-container-titulo input {
+  .o-first-column input {
     width: 30%;
     height: 30%;
   }
-  .o-container-final {
+  .o-final-container {
     width: 30%;
   }
-  body{
+  body {
     width: 30%;
   }
 }
-.o-container-final {
+/*Estilos del ultimo container de la interfaz*/
+.o-final-container {
   display: flex;
   flex-wrap: wrap;
 }
